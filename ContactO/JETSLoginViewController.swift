@@ -7,9 +7,69 @@
 //
 
 import UIKit
+import Alamofire
 
 class JETSLoginViewController: UIViewController {
 
+    @IBOutlet weak var passwordLogin: UITextField!
+    @IBOutlet weak var emailLogin: UITextField!
+   
+    
+    @IBAction func loginBtn(sender: AnyObject) {
+       // print (">>>> \( emailLogin.text! ) --- \( passwordLogin.text! )")
+        
+        Alamofire.request(.GET, "http://192.168.205.2:5030/contactListProject/rest/users/login", parameters: ["email": emailLogin.text!,"password": passwordLogin.text!])
+            .responseJSON { response in switch response.result {
+           
+            
+            case .Success(let JSON):
+                print("Success with JSON: \(JSON)")
+                
+                let response = JSON as! NSDictionary
+               
+                let status : String = response.objectForKey("status")! as! String
+               
+                if status  == "SUCCESS"{
+                
+                    /////// 1. save user in NSUserDefaults
+                
+                    
+                    /////// 2. redirect to contctsList
+                    
+                    var homeCtrl : JESTContactsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contactsCtrl") as! JESTContactsTableViewController
+                    
+                    
+                    self.navigationController?.pushViewController(homeCtrl, animated: true)
+                    
+                    
+                
+                }else{
+                    /////// login failed; show an Alert with the reason
+                    print("ERROR while logging in .. ")
+                    
+                    let message : String = response.objectForKey("result")! as! String
+                    
+                    let alert = UIAlertController(title: "Login Failed", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+                    self.presentViewController(alert, animated: true, completion: nil)
+
+                
+                }
+                
+            case .Failure(let error):
+                print("Request failed with error: \(error)")
+                }
+                
+                
+                
+        }
+        
+        
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

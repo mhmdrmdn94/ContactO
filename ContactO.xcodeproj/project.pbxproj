@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7913DAC0C37649486717C1FB /* Pods_ContactO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F174E015F296871708F31F88 /* Pods_ContactO.framework */; };
+		CC6C830F1EB4C70D008B710A /* roger-federer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC6C830E1EB4C70D008B710A /* roger-federer.jpg */; };
 		CCDCA61E1EB4A0E600DFE8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA61D1EB4A0E600DFE8DB /* AppDelegate.swift */; };
 		CCDCA6201EB4A0E600DFE8DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA61F1EB4A0E600DFE8DB /* ViewController.swift */; };
 		CCDCA6231EB4A0E600DFE8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDCA6211EB4A0E600DFE8DB /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		CCDCA6301EB4A59F00DFE8DB /* JETSLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA62F1EB4A59F00DFE8DB /* JETSLoginViewController.swift */; };
 		CCDCA6321EB4A5BB00DFE8DB /* JETSRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA6311EB4A5BB00DFE8DB /* JETSRegisterViewController.swift */; };
 		CCDCA6341EB4A94A00DFE8DB /* JESTContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */; };
-		CCDCA6381EB4ABA700DFE8DB /* roger-federer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCDCA6371EB4ABA700DFE8DB /* roger-federer.jpg */; };
 		CCDCA63A1EB4ADA400DFE8DB /* JETSDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */; };
 		CCDCA63C1EB4C47C00DFE8DB /* JETSAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +24,7 @@
 /* Begin PBXFileReference section */
 		8B14187823CDED9F18C88E95 /* Pods-ContactO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactO/Pods-ContactO.debug.xcconfig"; sourceTree = "<group>"; };
 		AABAC4DA59F4D66578DFE3F5 /* Pods-ContactO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactO.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactO/Pods-ContactO.release.xcconfig"; sourceTree = "<group>"; };
+		CC6C830E1EB4C70D008B710A /* roger-federer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "roger-federer.jpg"; sourceTree = "<group>"; };
 		CCDCA61A1EB4A0E600DFE8DB /* ContactO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDCA61D1EB4A0E600DFE8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCDCA61F1EB4A0E600DFE8DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +35,6 @@
 		CCDCA62F1EB4A59F00DFE8DB /* JETSLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSLoginViewController.swift; sourceTree = "<group>"; };
 		CCDCA6311EB4A5BB00DFE8DB /* JETSRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSRegisterViewController.swift; sourceTree = "<group>"; };
 		CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JESTContactsTableViewController.swift; sourceTree = "<group>"; };
-		CCDCA6371EB4ABA700DFE8DB /* roger-federer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "roger-federer.jpg"; sourceTree = "<group>"; };
 		CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSDetailsViewController.swift; sourceTree = "<group>"; };
 		CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSAddViewController.swift; sourceTree = "<group>"; };
 		F174E015F296871708F31F88 /* Pods_ContactO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,6 @@
 		CCDCA6111EB4A0E600DFE8DB = {
 			isa = PBXGroup;
 			children = (
-				CCDCA6371EB4ABA700DFE8DB /* roger-federer.jpg */,
 				CCDCA61C1EB4A0E600DFE8DB /* ContactO */,
 				CCDCA61B1EB4A0E600DFE8DB /* Products */,
 				F35B8316A2405EA76987B7B3 /* Pods */,
@@ -82,6 +81,7 @@
 		CCDCA61C1EB4A0E600DFE8DB /* ContactO */ = {
 			isa = PBXGroup;
 			children = (
+				CC6C830E1EB4C70D008B710A /* roger-federer.jpg */,
 				CCDCA61D1EB4A0E600DFE8DB /* AppDelegate.swift */,
 				CCDCA61F1EB4A0E600DFE8DB /* ViewController.swift */,
 				CCDCA6211EB4A0E600DFE8DB /* Main.storyboard */,
@@ -167,8 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6C830F1EB4C70D008B710A /* roger-federer.jpg in Resources */,
 				CCDCA6281EB4A0E600DFE8DB /* LaunchScreen.storyboard in Resources */,
-				CCDCA6381EB4ABA700DFE8DB /* roger-federer.jpg in Resources */,
 				CCDCA6251EB4A0E600DFE8DB /* Assets.xcassets in Resources */,
 				CCDCA6231EB4A0E600DFE8DB /* Main.storyboard in Resources */,
 			);
