@@ -18,6 +18,7 @@
 		CCDCA6341EB4A94A00DFE8DB /* JESTContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */; };
 		CCDCA6381EB4ABA700DFE8DB /* roger-federer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCDCA6371EB4ABA700DFE8DB /* roger-federer.jpg */; };
 		CCDCA63A1EB4ADA400DFE8DB /* JETSDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */; };
+		CCDCA63C1EB4C47C00DFE8DB /* JETSAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JESTContactsTableViewController.swift; sourceTree = "<group>"; };
 		CCDCA6371EB4ABA700DFE8DB /* roger-federer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "roger-federer.jpg"; sourceTree = "<group>"; };
 		CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSDetailsViewController.swift; sourceTree = "<group>"; };
+		CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JETSAddViewController.swift; sourceTree = "<group>"; };
 		F174E015F296871708F31F88 /* Pods_ContactO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				CCDCA6311EB4A5BB00DFE8DB /* JETSRegisterViewController.swift */,
 				CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */,
 				CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */,
+				CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */,
 			);
 			path = ContactO;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				CCDCA6301EB4A59F00DFE8DB /* JETSLoginViewController.swift in Sources */,
 				CCDCA6201EB4A0E600DFE8DB /* ViewController.swift in Sources */,
 				CCDCA6321EB4A5BB00DFE8DB /* JETSRegisterViewController.swift in Sources */,
+				CCDCA63C1EB4C47C00DFE8DB /* JETSAddViewController.swift in Sources */,
 				CCDCA61E1EB4A0E600DFE8DB /* AppDelegate.swift in Sources */,
 				CCDCA6341EB4A94A00DFE8DB /* JESTContactsTableViewController.swift in Sources */,
 				CCDCA63A1EB4ADA400DFE8DB /* JETSDetailsViewController.swift in Sources */,
@@ -383,6 +387,7 @@
 				CCDCA62E1EB4A0E600DFE8DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -120,7 +120,10 @@ class JESTContactsTableViewController: UITableViewController {
     
         print("Adding new Contact ... :)")
     
+        var addCtrl : JETSAddViewController = self.storyboard?.instantiateViewControllerWithIdentifier("addCtrl") as! JETSAddViewController
         
+        
+        self.navigationController?.pushViewController(addCtrl, animated: true)
         
         
     }
