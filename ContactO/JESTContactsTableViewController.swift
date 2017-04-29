@@ -16,15 +16,10 @@ class JESTContactsTableViewController: UITableViewController {
         
         print("ContactsTable is shown .. :)")
         
-//        let rightButtonItem = UIBarButtonItem.init(
-//            title: "Add",
-//            style: .Done,
-//            target: self,
-//            action: Selector("addNewContact:")
-//        )
-//        
-//        self.navigationItem.rightBarButtonItem = rightButtonItem
-//        
+        var addButton : UIBarButtonItem = UIBarButtonItem(title: "+", style: UIBarButtonItemStyle.Plain, target: self, action: "addNewContact")
+        
+        self.navigationItem.rightBarButtonItem = addButton
+        
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -125,6 +120,9 @@ class JESTContactsTableViewController: UITableViewController {
     
         print("Adding new Contact ... :)")
     
+        
+        
+        
     }
     
     
