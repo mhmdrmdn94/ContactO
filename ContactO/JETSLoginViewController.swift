@@ -18,7 +18,7 @@ class JETSLoginViewController: UIViewController {
     @IBAction func loginBtn(sender: AnyObject) {
        // print (">>>> \( emailLogin.text! ) --- \( passwordLogin.text! )")
         
-        Alamofire.request(.GET, "http://192.168.205.2:5030/contactListProject/rest/users/login", parameters: ["email": emailLogin.text!,"password": passwordLogin.text!])
+        Alamofire.request(.GET, "http://192.168.1.5:5030/contactListProject/rest/users/login", parameters: ["email": emailLogin.text!,"password": passwordLogin.text!])
             .responseJSON { response in switch response.result {
            
             
@@ -28,16 +28,25 @@ class JETSLoginViewController: UIViewController {
                 let response = JSON as! NSDictionary
                
                 let status : String = response.objectForKey("status")! as! String
-               
+                let result : String = response.objectForKey("result") as! String
+                let data: NSData = result.dataUsingEncoding(NSUTF8StringEncoding)!
+                var arr: AnyObject = try! NSJSONSerialization.JSONObjectWithData(data, options: [])
+                var contacts = arr as! NSMutableArray
+                
+                
                 if status  == "SUCCESS"{
                 
                     /////// 1. save user in NSUserDefaults
-                
+    
                     
                     /////// 2. redirect to contctsList
                     
                     var homeCtrl : JESTContactsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contactsCtrl") as! JESTContactsTableViewController
-                    
+                    for item in contacts {
+                        //var contact : contactDTO = contactDTO(email: item["email"] as! String, phone: item["phone"] as! String, mobile: item["phone"] as! String, fullName: item["fullName"] as! String, contactId: item["id"] as! Int32)
+                        var hamada = item["email"] as AnyObject? as? String
+                        
+                    }
                     
                     self.navigationController?.pushViewController(homeCtrl, animated: true)
                     

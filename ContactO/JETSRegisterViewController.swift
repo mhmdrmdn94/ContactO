@@ -17,7 +17,7 @@ class JETSRegisterViewController: UIViewController {
     @IBOutlet weak var mobile: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBAction func registerBtn(sender: AnyObject) {
-        Alamofire.request(.GET, "http://192.168.205.2:5030/contactListProject/rest/users/register", parameters: ["email": email.text!,"password": password.text!,"mobile": mobile.text!,"phone": phone.text!,"userName": "7amada","fullName": fname.text!])
+        Alamofire.request(.GET, "http://192.168.1.5:5030/contactListProject/rest/users/register", parameters: ["email": email.text!,"password": password.text!,"mobile": mobile.text!,"phone": phone.text!,"userName": "7amada","fullName": fname.text!])
         .responseString { response in
             print(">>> Success: \(response.result.isSuccess)")
             print(">>> Response String: \(response.result.value!)")
@@ -26,12 +26,13 @@ class JETSRegisterViewController: UIViewController {
             if response.result.value == "DONE" {
             
                 //////// 1. save user in NSUserDefaults
-                
-                
+                let user : contactDTO = contactDTO(email: self.email.text!,phone: self.phone.text!,mobile: self.mobile.text!,fullName: self.fname.text!, contactId: 0)
+                let userDfaults : NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                userDfaults.setObject(user, forKey: "user")
                 
                 //////// 2.  redirect to contactsList tableview
                 
-                var homeCtrl : JESTContactsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contactsCtrl") as! JESTContactsTableViewController
+                let homeCtrl : JESTContactsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("contactsCtrl") as! JESTContactsTableViewController
                 
                 
                 self.navigationController?.pushViewController(homeCtrl, animated: true)

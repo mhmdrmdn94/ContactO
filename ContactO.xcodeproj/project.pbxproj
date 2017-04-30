@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7913DAC0C37649486717C1FB /* Pods_ContactO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F174E015F296871708F31F88 /* Pods_ContactO.framework */; };
+		CC2EBDBD1EB5E4C2001168BA /* contactDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2EBDBC1EB5E4C2001168BA /* contactDTO.swift */; };
 		CC6C830F1EB4C70D008B710A /* roger-federer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CC6C830E1EB4C70D008B710A /* roger-federer.jpg */; };
 		CCDCA61E1EB4A0E600DFE8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA61D1EB4A0E600DFE8DB /* AppDelegate.swift */; };
 		CCDCA6201EB4A0E600DFE8DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDCA61F1EB4A0E600DFE8DB /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		8B14187823CDED9F18C88E95 /* Pods-ContactO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContactO/Pods-ContactO.debug.xcconfig"; sourceTree = "<group>"; };
 		AABAC4DA59F4D66578DFE3F5 /* Pods-ContactO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactO.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactO/Pods-ContactO.release.xcconfig"; sourceTree = "<group>"; };
+		CC2EBDBC1EB5E4C2001168BA /* contactDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactDTO.swift; sourceTree = "<group>"; };
 		CC6C830E1EB4C70D008B710A /* roger-federer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "roger-federer.jpg"; sourceTree = "<group>"; };
 		CCDCA61A1EB4A0E600DFE8DB /* ContactO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDCA61D1EB4A0E600DFE8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				CCDCA6331EB4A94A00DFE8DB /* JESTContactsTableViewController.swift */,
 				CCDCA6391EB4ADA400DFE8DB /* JETSDetailsViewController.swift */,
 				CCDCA63B1EB4C47C00DFE8DB /* JETSAddViewController.swift */,
+				CC2EBDBC1EB5E4C2001168BA /* contactDTO.swift */,
 			);
 			path = ContactO;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				CCDCA63C1EB4C47C00DFE8DB /* JETSAddViewController.swift in Sources */,
 				CCDCA61E1EB4A0E600DFE8DB /* AppDelegate.swift in Sources */,
 				CCDCA6341EB4A94A00DFE8DB /* JESTContactsTableViewController.swift in Sources */,
+				CC2EBDBD1EB5E4C2001168BA /* contactDTO.swift in Sources */,
 				CCDCA63A1EB4ADA400DFE8DB /* JETSDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

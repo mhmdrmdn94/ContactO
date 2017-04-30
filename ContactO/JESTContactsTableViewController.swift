@@ -10,6 +10,8 @@ import UIKit
 
 class JESTContactsTableViewController: UITableViewController {
 
+    var contacts : [contactDTO] = Array<contactDTO>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
