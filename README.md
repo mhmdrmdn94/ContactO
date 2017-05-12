@@ -1,6 +1,6 @@
 # ContactO
 
-ContactO is a simple iOS Mobile Application. 
+ContactO is a simple iOS Mobile Application using SWIFT-2. 
 Developed as a front-end application for WebServices backend course at ITI,Smart village, Cairo.
 =====================================================================================================================================
 
